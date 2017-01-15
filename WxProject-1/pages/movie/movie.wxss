@@ -1,0 +1,53 @@
+/* pages/movie/movie.wxss */
+
+view {
+  font-family: 'Arial', 'Helvetica', 'Microsoft yahei', 'STHeiti';
+  font-size: 30rpx;
+}
+
+.view-list {
+  border-bottom: 1px solid #d9d9d9;
+  margin: 0 20rpx;
+  padding: 20rpx 0;
+  display: flex;
+}
+
+.movie-img {
+  width: 200rpx;
+  height: 240rpx;
+}
+
+.movie-detail {
+  margin: 0 20rpx;
+  flex: 2;
+  line-height: 180%;
+}
+
+.movie-average {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 40rpx;
+  color: orangered;
+}
+.movie-name{
+    color: #3c9;
+}
+.movie-year{
+    color: lightslategray;
+    font-size: 26rpx;
+}
+.movie-author{
+    color: lightslategray;
+    font-size: 26rpx;
+}
+.movie-average button{
+    font-size: 26rpx;
+    margin-top: 20rpx;
+    background-color: #3c9;
+}
+button.movie-button{
+    background-color: #24ba88;
+}

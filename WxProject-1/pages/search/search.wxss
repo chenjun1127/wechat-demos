@@ -1,0 +1,63 @@
+view {
+  font-family: 'Arial', 'Helvetica', 'Microsoft yahei', 'STHeiti';
+  font-size: 26rpx;
+  line-height: 180%;
+}
+
+.input-serarch {
+  border: 1px solid #3c9;
+  border-right: none;
+  border-radius: 50rpx 0 0 50rpx;
+  font-size: 26rpx;
+  padding: 10rpx 20rpx;
+  flex: 8;
+}
+
+.searchForm {
+  display: flex;
+  padding: 20rpx;
+  padding-bottom: 0;
+}
+
+button.search-btn {
+  background-color: #3c9;
+  font-size: 26rpx;
+  border-radius: 0 50rpx 50rpx 0;
+  padding-top: 3px;
+  flex: 2;
+}
+
+button.search-btn-hover {
+  background-color: #24ba88;
+}
+.movie-tags{
+  padding: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.movie-no-content{
+  padding: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 26rpx;
+  color: #666;
+}
+.hide{
+  display: none;
+}
+.movie-tags button{
+  font-size: 26rpx;
+  border-radius: 50rpx;
+  padding: 0rpx 30rpx;
+  border:1px solid #3c9;
+  color: #666;
+  margin: 10rpx;
+  background-color: #fff;
+
+}
+.movie-tags button.movie-tags-button{
+  background-color: #3c9;
+  color: #fff;
+}
+@import "../movie/movie.wxss";

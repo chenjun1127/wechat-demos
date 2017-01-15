@@ -1,0 +1,80 @@
+/**detail.wxss**/
+
+.containerInnner {
+  align-items: flex-start;
+  padding: 0;
+}
+
+button {
+  display: block;
+  margin: 20rpx 3%;
+  width: 94%;
+  background-color: #3c9;
+}
+
+.scroll-view {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  font-family: 'Arial', 'Helvetica', 'Microsoft yahei', 'STHeiti';
+  background: url(../../img/bg_1.jpg);
+  background-size: cover;
+  color: #fff;
+  font-size: 30rpx;
+  line-height: 160%;
+}
+
+.view_1 {
+  display: flex;
+  align-items:flex-end;
+  font-size: 28rpx;
+  line-height: 180%;
+  flex-direction: column;
+}
+
+.view_2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 50px;
+  padding-top: 60rpx;
+}
+
+.text_1 {
+  font-size: 120rpx;
+  padding-right: 10px;
+}
+
+.view_3 {
+  display: flex;
+}
+
+.view_4 {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 0 20rpx;
+  margin-bottom: 15rpx;
+}
+
+.view_4_list {
+  display: flex;
+  margin: 30rpx 0;
+}
+
+.weather_description {
+  display: block;
+  padding: 20rpx 0;
+}
+
+.list_text_2 {
+  margin: 0 50rpx;
+}
+
+.bgShadow {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20rpx;
+  color: #fff;
+  display: flex;
+  width: 100%;
+}

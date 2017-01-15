@@ -1,0 +1,24 @@
+<view class="scroll-view">
+  <view class="view_1">
+    <text>{{weather.city}}</text>
+    <text>{{weather.current.formattedDate}}</text>
+    <text>{{weather.current.formattedTime}}更新</text>
+  </view>
+  <view class="view_2">
+    <text class="text_1">{{weather.current.temperature}}℃</text>
+    <text class="text_2">{{weather.current.summary}}</text>
+  </view>
+  <view class="view_3">
+    <text class="bgShadow">{{weather.daily.summary}}</text>
+  </view>
+  <view>
+    <text class="weather_description">接下来七天天气：</text>
+  </view>
+  <view class="view_4">
+    <view wx:for="{{weather.daily.data}}" wx:key="{{*this}}" class="view_4_list">
+      <text class="list_text_1"> {{item.weekday}} </text>
+      <text class="list_text_2"> {{item.temperatureMin}}-{{item.temperatureMax}}℃ </text>
+      <text class="list_text_3"> {{item.summary}} </text>
+    </view>
+  </view>
+</view>

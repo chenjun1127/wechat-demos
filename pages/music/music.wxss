@@ -1,0 +1,74 @@
+/* pages/music/music.wxss */
+
+view {
+  font-family: 'Arial', 'Helvetica', 'Microsoft yahei', 'STHeiti';
+  font-size: 30rpx;
+}
+
+.music-poster {
+  padding: 20rpx;
+  padding-bottom: 0;
+}
+
+.music-poster image {
+  display: block;
+  width: 100%;
+  height: 300rpx;
+}
+
+.hide {
+  display: none;
+}
+
+.songs-view {
+  padding: 20rpx;
+  padding-top: 0;
+}
+
+.songs-title {
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+  color: #3c9;
+  border-bottom: 1px solid #3c9;
+}
+
+.songs-list {
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.songs-img {
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.songs-info {
+  padding: 0 20rpx;
+  flex: 2;
+ 
+}
+
+.songs-info text {
+  display: block;
+  line-height: 180%;
+}
+
+.songs-arrow {
+  font-size: 50rpx;
+  font-family: "simsun";
+  color: lightgrey;
+  padding: 0 10rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-1 {
+  color: #3c9;
+}
+
+.text-2 {
+  font-size: 26rpx;
+  color: lightslategray;
+}

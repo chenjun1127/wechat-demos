@@ -2,7 +2,7 @@
 <!--pages/music/music.wxml-->
 <view>
   <swiper class="{{show ? 'music-poster' : 'hide'}}" indicator-dots="{{true}}" autoplay="{{true}}" interval="{{3000}}" duration="{{500}}" circular="{{true}}">
-    <block wx:for="{{imgSrcArr}}" wx:key="{{*this}}">
+    <block wx:for="{{imgSrcArr}}" >
       <swiper-item>
         <image src="{{item}}" bindtap="swipclick" mode="aspectFill"></image>
       </swiper-item>
@@ -10,7 +10,7 @@
   </swiper>
   <view class="songs-view">
     <view class="songs-title">{{name}}</view>
-    <view wx:for="{{songList}}" wx:key="{{*this}}" class="songs-list" bindtap="playMusic" data-id="{{item.song_id}}">
+    <view wx:for="{{songList}}"  class="songs-list" bindtap="playMusic" data-id="{{item.song_id}}">
       <image src="{{item.pic_big}}" mode="aspectFill" class="songs-img"></image>
       <view class="songs-info"  >
         <text class="text-1">{{item.title}}</text>

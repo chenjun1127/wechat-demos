@@ -5,19 +5,19 @@
   <view class="detail-2">
     <view>
       <text class="text-color">导演：</text>
-      <text wx:for="{{detailInfo.directors}}" wx:key="{{*this}}"> {{item.name}} </text>
+      <text wx:for="{{detailInfo.directors}}" > {{item.name}} </text>
     </view>
     <view>
       <text class="text-color">主演：</text>
-      <text wx:for="{{detailInfo.casts}}" wx:key="{{*this}}"> {{item.name}} </text>
+      <text wx:for="{{detailInfo.casts}}" > {{item.name}} </text>
     </view>
     <view>
       <text class="text-color">类型：</text>
-      <text wx:for="{{detailInfo.genres}}" wx:key="{{*this}}"> {{item}} </text>
+      <text wx:for="{{detailInfo.genres}}" > {{item}} </text>
     </view>
     <view>
       <text class="text-color">制片国家地区：</text>
-      <text wx:for="{{detailInfo.countries}}" wx:key="{{*this}}"> {{item}} </text>
+      <text wx:for="{{detailInfo.countries}}" > {{item}} </text>
     </view>
     <view>
       <text class="text-color">上映年份：</text>
@@ -25,7 +25,7 @@
     </view>
     <view>
       <text class="text-color">又名：</text>
-      <text wx:for="{{detailInfo.aka}}" wx:key="{{*this}}"> {{item}} </text>
+      <text wx:for="{{detailInfo.aka}}" > {{item}} </text>
     </view>
   </view>
 </view>

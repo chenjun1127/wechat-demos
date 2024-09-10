@@ -6,20 +6,20 @@
     <button type="primary" class="search-btn" bindtap="cancelEvent" hover-class="search-btn-hover" size="{{mini}}">取消</button>
   </view>
   <view class="{{show? 'movie-tags':'hide'}}">
-    <button wx:for="{{tags}}" wx:key="{{*this}}" type="default" bindtap="tagsEvent" data-text="{{item}}" hover-class="movie-tags-button">{{item}}</button>
+    <button wx:for="{{tags}}"  type="default" bindtap="tagsEvent" data-text="{{item}}" hover-class="movie-tags-button">{{item}}</button>
   </view>
   <view class="{{noContentShow? 'movie-no-content':'hide'}}">
     <text>暂无内容</text>
   </view>
   <view>
-    <view class="view-list" wx:for="{{searchMovieList}}" wx:key="{{*this}}" wx:for-index="idx" wx:for-item="itemMovie">
+    <view class="view-list" wx:for="{{searchMovieList}}"  wx:for-index="idx" wx:for-item="itemMovie">
       <image src="{{itemMovie.images.large}}" class="movie-img" mode="aspectFill"></image>
       <view class="movie-detail">
         <view class="movie-name">{{itemMovie.title}}</view>
         <view class="movie-year">上映年份：{{itemMovie.year}}</view>
         <view class="movie-author">
           <text>导演：</text>
-          <text wx:for="{{itemMovie.directors}}" wx:key="{{*this}}"> {{item.name}} </text>
+          <text wx:for="{{itemMovie.directors}}" > {{item.name}} </text>
         </view>
       </view>
       <view class="movie-average">

@@ -1,14 +1,14 @@
 
 <!--pages/movie/movie.wxml-->
 <view>
-  <view class="view-list" wx:for="{{movieList}}" wx:key="{{*this}}" wx:for-index="idx" wx:for-item="itemMovie">
+  <view class="view-list" wx:for="{{movieList}}"  wx:for-index="idx" wx:for-item="itemMovie">
     <image src="{{itemMovie.images.large}}" class="movie-img" mode="aspectFill"></image>
     <view class="movie-detail">
       <view class="movie-name">{{itemMovie.title}}</view>
       <view class="movie-year">上映年份：{{itemMovie.year}}</view>
       <view class="movie-author">
         <text>导演：</text>
-        <text wx:for="{{itemMovie.directors}}" wx:key="{{*this}}"> {{item.name}} </text>
+        <text wx:for="{{itemMovie.directors}}" > {{item.name}} </text>
       </view>
     </view>
     <view class="movie-average">
